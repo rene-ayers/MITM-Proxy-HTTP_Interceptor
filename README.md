@@ -33,7 +33,6 @@ This Python tool works with **mitmproxy** to capture and log HTTP/HTTPS traffic.
 ## How to Setup and Use the Tool
 
 1. **Install mitmproxy**
-
    Open your terminal and run:
 
    ```bash
@@ -43,15 +42,18 @@ This Python tool works with **mitmproxy** to capture and log HTTP/HTTPS traffic.
   - Create a file named `traffic_logger.py`. 
   - Paste the script code into this file and save it.
 
+
 3. Run **mitmproxy** with your script
   - In your terminal, navigate to the folder where `traffic_logger.py` is saved and run:
     mitmproxy -s traffic_logger.py
  
+
 4. Set up your browser or device to use **mitmproxy** 
   - Open your browser or device’s proxy settings
   - Set the proxy to: 
       - Address: 127.0.0.1
       - Port: 8080
+
 
 5. Browse the internet
   - Go to websites like Google.com
@@ -62,3 +64,5 @@ This Python tool works with **mitmproxy** to capture and log HTTP/HTTPS traffic.
       - Save detailed data to `traffic_data.json`
 
 **This tool is for educational and authorized use only. Do not monitor without consent or permission.**
+
+  
