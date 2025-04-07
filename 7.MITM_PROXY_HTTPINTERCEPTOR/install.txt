@@ -1,0 +1,28 @@
+# Start mitmproxy web interface
+mitmweb --mode regular
+
+# Open this link in your browser:
+http://mitm.it/
+
+# Install the certificate on Windows:
+#    - Click "Windows" on the mitm.it page.
+#    - Download the .crt file.
+
+# Open the Windows Certificate Manager:
+certmgr.msc
+
+# Import the mitmproxy certificate:
+#    - Go to "Trusted Root Certification Authorities" → "Certificates".
+#    - Right-click → "Import".
+#    - Select the downloaded mitmproxy-ca-cert.pem file.
+#    - Click "Next" → "Finish".
+
+# Once the certificate is installed, go to windows -> proxy settings and set the proxy to:
+host: 127.0.0.1
+port: 8080
+click save
+
+# then run: mitmweb -s MITM_Proxy_HTTPInterceptor.py
+
+# browse to: http://127.0.0.1:8081/#/flows
+to see all HTTP traffic
